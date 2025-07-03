@@ -8,3 +8,4 @@ class ContactsBinding implements Bindings {
     Get.lazyPut<ContactsController>(() => ContactsController());
   }
 }
+//200
