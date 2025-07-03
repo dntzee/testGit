@@ -1,7 +1,7 @@
 import 'package:get/get.dart';
 import 'package:learning_officer_oa/common/models/message/cloud_school_model.dart';
 import 'package:learning_officer_oa/pages/administration_pages/pages/work_indicators/pages/tasktypes/index.dart';
-
+//22
 class ContactsState {
   // 通讯录数据列表
   final RxList<CloudSchoolModel> _contactsList = <CloudSchoolModel>[].obs;
