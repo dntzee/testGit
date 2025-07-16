@@ -4,6 +4,7 @@ import 'package:learning_officer_oa/common/models/message/cloud_school_model.dar
 import 'package:learning_officer_oa/common/models/message/cloud_school_user_model.dart';
 import 'package:learning_officer_oa/utils/toast_utils.dart';
 //f2
+//m2 main 1
 import 'index.dart';
 
 class ContactsController extends GetxController with RequestToolMixin {
@@ -47,12 +48,12 @@ class ContactsController extends GetxController with RequestToolMixin {
     // 这里可以添加点击联系人的逻辑，比如跳转到聊天页面
     ToastUtils.showSuccess('点击了联系人：${user.userName}');
   }
-  
+
   // 点击学校，跳转到联系人列表页面
   void onSchoolTap(CloudSchoolModel school) {
-    Get.toNamed('/message/contact_list', arguments: {
-      'schoolId': school.id,
-      'schoolName': school.schoolName,
-    });
+    Get.toNamed(
+      '/message/contact_list',
+      arguments: {'schoolId': school.id, 'schoolName': school.schoolName},
+    );
   }
 }
